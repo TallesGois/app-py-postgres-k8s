@@ -32,4 +32,4 @@ O projeto visa subir uma aplicação em Python integrada a um banco de dados Pos
 11. Abrir aplicação no navegador utilizando ip do minikube e porta da aplicação
 
 ### Resultado (Aplicação no ar!!!)
-![ app-py](image\app-py.png )
+![ app-py](.\image\app-py.png )
