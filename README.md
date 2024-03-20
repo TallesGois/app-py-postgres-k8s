@@ -15,10 +15,10 @@ O projeto visa subir uma aplicação em Python integrada a um banco de dados Pos
 4. Configurar NÓ do banco de dados (no NameSpace Postgres)<br/>
     a. Criar e configurar o arquivo de configuração de variáveis de ambiente do postgres (pg-configmap.yaml)<br/>
     b. Criar e configurar o arquivo de deployment, responsável pela criação do container do postgres (pg-deployment.yaml)<br/>
-    c. Criar e configurar o arquivo de service do tipo load balancer, responsável por expor a porta e o serviço do postgres (pg-deployment.yaml)<br/>
+    c. Criar e configurar o arquivo de service do tipo load balancer, responsável por expor a porta e o serviço do postgres (pg-service.yaml)<br/>
 5. Configurar NÓ da aplicação (no NameSpace Default)<br/>
     a. Criar e configurar o arquivo de deployment, responsável pela criação do container da aplicação (app-deployment.yaml)<br/>
-    b. Criar e configurar o arquivo de service do tipo load balancer, responsável por expor a porta da aplicação (pg-deployment.yaml)<br/>
+    b. Criar e configurar o arquivo de service do tipo load balancer, responsável por expor a porta da aplicação (pg-service.yaml)<br/>
 6. Aplicar arquivos yaml com o kubectl, para colocar postgres no ar<br/>
     a. kubectl apply -f pg-configmap.yaml -n postgres → Carregar as variáveis de ambiente no NameSpace do postgres<br/>
     b. kubectl apply -f pg-deployment.yaml -n postgres  → Subir POD do Banco de Dados no NameSpace do postgres<br/>
