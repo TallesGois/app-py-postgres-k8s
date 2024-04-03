@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: israelnp/app:1.0
+        image: tallesgois/app:1.0
         ports:
         - containerPort: 5000
         env:
